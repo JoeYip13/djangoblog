@@ -29,7 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ci-joe-yip-django-blog-2c7016a872a6.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['ci-joe-yip-django-blog-2c7016a872a6.herokuapp.com',
+                 '8000-joeyip13-djangoblog-sq736n42io.us2.codeanyapp.com']
 
 
 # Application definition
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'blog',
 ]
 
